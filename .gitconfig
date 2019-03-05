@@ -78,6 +78,8 @@
 			git commit --amend -m \"$(git log -1 --pretty=%B)\n\nCloses #$1.\"; \
 		fi \
 	}; f"
+	last = log -1 HEAD
+	pr = pull --rebase
 
 [apply]
 
